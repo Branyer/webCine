@@ -6,15 +6,16 @@
     <title>Cine y Directores</title>
     <script src="/js/prefixfree.min.js" type="text/javascript"></script>
     <link rel="stylesheet" href="/css/styles.css" type="text/css">
+    <link href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" rel="stylesheet">
 </head>
 <body>
         <header>
             <div class="header">
-                <img src="/img/logo.png" alt="logo">
+                <img src="/img/logo.png" alt="logo" class="img-logo">
                 <nav class="nav">
                     <ul>
                         <li><a href="#">Inicio</a></li>
-                        <li>
+                        <li class="drop-down">
                             <a href="#">Categorias</a>
                             <ul>
                                 <li><a href="#">Thriller</a></li>
@@ -28,8 +29,9 @@
                         <li><a href="#">Contacto</a></li>
                     </ul>
                 </nav>
-                <div class="buscador">
-                    <input type="text" placeholder="Buscar...">
+                <div id = "buscador" class="buscador">
+                    <input id="input" type="text" placeholder="Buscar...">
+                    <button id ="boton" type="submit"><i class="fa fa-search"></i></button>
                 </div>
             </div>
         </header>
@@ -132,9 +134,6 @@
             <div class="footer"><img src="" alt=""></div>
             <p>&copy Todos los Derchos reservados</p>
         </footer>
-
-
-
-
+        <script src="/js/eventos.js" type="text/javascript"></script>
 </body>
 </html>
