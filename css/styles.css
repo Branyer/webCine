@@ -27,7 +27,6 @@ img{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
 }
 
 .header .img-logo{
@@ -292,6 +291,8 @@ section h1{
 
 }
 
+/*FOOTER*/
+
 .footer img{
     width: 45%;
     height: 70%;
@@ -304,4 +305,72 @@ section h1{
 footer p{
     text-align: center;
     margin: 20px;
+}
+
+/*Media quieries*/
+
+@media all and (max-width:1100px){
+
+    .header{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: space-between;
+        
+    }
+    .header .img-logo{
+        margin-bottom: 20px;
+        width: 120px;
+        height: auto;
+    }
+
+    .header .buscador{
+        margin: 0;
+        min-width: 200px;
+        width: 2%;
+        height: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        
+    }
+
+}
+
+@media all and (max-width:700px){
+
+    .header .nav ul li{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+
+    .peliculas {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .peliculas .block{
+        width: 40%;
+        margin: 20px;
+        
+    }
+    
+    
+    .directores .director{
+        width: 90%;
+    }
+}
+
+@media all and (max-width:440px){
+
+    .header .nav {
+       display: none;
+    }
+
+    
+    .directores .director{
+        height: 200px;
+
+    }
+
 }
